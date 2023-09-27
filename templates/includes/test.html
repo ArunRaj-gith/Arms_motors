@@ -1,0 +1,106 @@
+<section class="mt-5 contactus">
+    <div class="container">
+      <h2 class="maintitle  ">GET IN TOUCH</h2>
+      <p class="main-subtitle  ">want to get in touch ? we'd love to hear from you. Here's how you can reach us...</p>
+  
+      <form action="{% url 'enquiry'%}" class="mt-5 contactform" method="POST">
+        {% csrf_token %}
+        <h3 class="text-center">What can we help you with ?</h3>
+        <div class="small text-center">(Please select one option)</div>
+        <br />
+  
+        <div class="form-group row  ">
+  
+          <div id="myQuestions" class="select-options col-xs-5">
+            <select id="QuestionOptions" class="form-control form-select" name="customer_need">
+              <option class="default-label" value="" disabled selected>Please select one of the following:</option>
+              <option value="Customer Support">Customer Support</option>
+              <option value="Suggestions / Appreciations">Suggestions / Appreciations</option>
+              <option value="chooseenquire" value="Investors Enquires">Investors Enquires</option>
+              <option value="choosedealership" value="Authorized Dealership">Authorized Dealership</option>
+              <option value="choosegeneraleq" value="General Enquires">General Enquires</option>
+              <option value="choosepress" value="Press Release">Press Release</option>
+              <option value="choosesales" value="Industrial Sales">Industrial Sales</option>
+              <option value="chooseexport" value="Internation Business / Export">Internation Business / Export</option>
+              <option value="choosestock" value="Authorized Parts stocklist">Authorized Parts stocklist</option>
+              <option value="chooseOther" value="Other">Other</option>
+            </select>
+          </div>
+  
+          <div id="myAnswers" class="col-xs-12  pt-4 ">
+  
+            <div id="choosesupport" class="fixtures select-answers">
+              <h4 class="text-center">Fill the form below and we'll get in touch with you.
+              </h4>
+              <div class="row">
+  
+  
+                <div class="col-lg-6">
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text labeltxt col-3 w-100">First Name</span>
+                    <input type="text" name="first_name" class="form-control informcntrl w-100 ms-0" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text labeltxt col-3 w-100">Last Name</span>
+                    <input type="text" name="last_name" class="form-control informcntrl w-100 ms-0" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text labeltxt col-3 w-100">Email @ </span>
+                    <input type="email" name="email" class="form-control informcntrl w-100 ms-0" placeholder="@example.com">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text labeltxt col-3 w-100">Phone No.</span>
+                    <input type="text" name="phone" class="form-control informcntrl w-100 ms-0" placeholder="Phone No." maxlength="11">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text labeltxt col-3 w-100">Address</span>
+                    <textarea name="address" class="form-control informcntrl w-100 ms-0" cols="1" rows="3" maxlength="150"></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text labeltxt col-3 w-100">Message</span>
+                    <textarea name="message" class="form-control informcntrl w-100 ms-0" cols="1" rows="3" maxlength="150"></textarea>
+  
+                  </div>
+                </div>
+                <div class="form-check pt-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    I would like to receive offers/product related news and updates from TVS Motor Company and authorise
+                    them to contact me via SMS, email, WhatsApp and other modes of communication.
+  
+                  </label>
+                </div>
+              </div>
+              <div class="button_wrap text-center ">
+                <a href="#" class="btn btntest">
+                  <span class="span">
+                    Reset</span>
+                </a>
+                <!-- <a href="#" class="btn btndealer">
+                  <span class="span">Submit</span>
+  
+                </a> -->
+                <input type="submit" value="Submit" class="btn btndealer">
+              </div>
+            </div>
+  
+          
+  
+          </div>
+  
+        </div>
+    </form>
+    </div>
+  
+    </div>
+  </section>

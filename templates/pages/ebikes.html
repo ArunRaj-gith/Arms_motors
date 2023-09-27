@@ -1,0 +1,79 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+{% load static %}
+
+<main id="marginTop">
+    <section class="mt-5  image-gallery ebikebook">
+      <div class="container">
+        <h2 class="maintitle  ">Choose E-bikes </h2>
+        {% for bike in bike_info %}
+        <div class="card   p-0 bg-transparent bike-color">
+            
+          <div class="row">
+
+            <div class="col-md-12  col-lg-6 col-sm-12">
+              <div class="imgBx mt-5">
+                <img src="{% static 'images/header_bike.png' %}" alt=" " class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-sm-12 description-container p-5">
+              <div class="main-description">
+
+                <h3 class="maintitle">{{bike.model_name}} </h3>
+                <h5 class="product-category mt-4 mb-2 text-white">Available Colors</h5>
+                <p class="product-colors">
+                  <span class="black " data-color-primary="#000" data-color-sec="#212121" data-pic="./images/header_bike_black.png"></span>
+                  <span class="red" data-color-primary="#7E021C" data-color-sec="#bd072d" data-pic="./images/header_bike_red.png"></span>
+                  <span class="yellow active" data-color-primary="#CE5B39" data-color-sec="#F18557" data-pic="./images/header_bike.png"></span>
+                </p>
+                <hr class="text-white">
+
+                <h5 class="product-title mt-4 mb-4 text-white">Specifications</h5>
+                <div class="form-fields text-white ">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="justify-content-p">
+                        <div class="spec-prop"><span class="d-block pb-2">Range</span> {{bike.model_range}} </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="justify-content-p">
+                        <div class="spec-prop"><span class="d-block  pb-2">Power</span> {{bike.model_power}}</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="justify-content-p">
+                          <div class="spec-prop"><span class="d-block  pb-2">Kerb Weight</span>{{bike.model_weight}} </div>
+                        </div>
+                      </div>
+                    <div class="col-md-4">
+                      <div class="justify-content-p">
+                        <div class="spec-prop">
+                          <span class="d-block pb-2">Charging</span> {{bike.charging_time}}
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 button_wrap  ">
+
+                  <a href="{% url 'bookingform' %}" class="btn btntest">
+                    <span class="span">NEXT</span>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- End row -->
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg  fixed-top ">
+    <div class="container    ">
+      <!-- <a class="navbar-brand fs-4" href="#">navbar</a> -->
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static 'images/ARMZ_MASTER_LOGO-01-removebg-preview 1.png' %}" width="50" height="40" alt="">
+      </a>
+      <button class="navbar-toggler shadow-none border-0 custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">navbar</h5> -->
+          <a class="navbar-brand offcanvas-title" href="" id="offcanvasNavbarLabel">
+            <img src="{% static 'images/ARMZ_MASTER_LOGO-01-removebg-preview 1.png' %}" width="50" height="50" alt="">
+          </a>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column  flex-lg-row p-4 p-lg-0">
+
+
+          <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="{% url 'ebikes' %}">E-Bikes</a>
+            </li>
+            
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="{% url 'dealership' %}">Dealership</a>
+            </li>
+       
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="{% url 'bookingform' %}">Bookings</a>
+            </li>
+            <!-- <li class="nav-item mx-2">
+              <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </li> -->
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+            </li>
+     
+          </ul>
+          <!-- let's talk -->
+          <div class="d-flex justify-content-center align-items-center gap-3 flex-column flex-lg-row">
+
+            <a href="{% url 'contact' %}" class="nav-button text-white text-decoration-none px-3 py-1 rounded-2">Let's talk</a>
+          </div>
+          <div class="mobile-footer d-flex justify-content-center align-items-center py-2  fs-4 flex-lg-row d-lg-none ">
+            <a href="javascript:void(0)" class="px-2  "> <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="javascript:void(0)" class="px-2"> <i class="fa-brands fa-square-twitter"></i>
+            </a>
+            <a href="javascript:void(0)" class="px-2"> <i class="fa-brands fa-instagram"></i>
+
+            </a>
+            <a href="javascript:void(0)" class="px-2"> <i class="fa-brands fa-square-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>

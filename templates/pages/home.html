@@ -1,0 +1,641 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+{% load static %}
+<div class="modal fade loadmodel  " data-bs-backdrop="static" data-bs-keyboard="false" id="onload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <!-- <h5 class="modal-title text-black">Certificate Of Registeration</h5> -->
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-12 col-lg-5 ">
+              <div class="card-img-bottom">
+              </div>
+              <!-- <img src="{% static 'images/pervidoe 1.png'%}" class="img-fluid rounded-start" alt="..."> -->
+            </div>
+            <div class="col-md-12 col-lg-7">
+              <div class="loadcnt">
+                <h5 class="card-title">Get a Sub-Dealership of Armz Motors
+                </h5>
+                <p class="card-text">Get 20% Off For Armz Members
+                </p>
+                <a href="{% url 'dealership'%}" class="btn btndealer">
+                  <span class="span">Dealership</span>
+
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<main id="marginTop">
+    <section class="hero-section mt-5 bg ">
+      <div class="container">
+        <div class="row justify-content-center ">
+          <div class="col-sm-12 col-lg-6  ml-auto d-lg-flex align-items-center mt-4 mt-md-0   ">
+            <div class="hero-content">
+
+              <p class="section-subtitle  ">INTRODUCING </p>
+              <h1 class="h1 section-title  ">ARMZ SUPER ECO</h1>
+              <p class="section-subtitle   ">SERIES OF SCOOTERS </p>
+              <div class="button_wrap  ">
+                <a href="{% url 'bookingform' %}" class="btn btntest">
+                  <span class="span">
+                    <i class="fa-solid fa-motorcycle" style="color: #161f28;"></i>
+                    Book a Test Derive</span>
+                </a>
+                <a href="{% url 'dealership' %}" class="btn btndealer">
+                  <span class="span">Dealership</span>
+
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-12 col-lg-6 ">
+            <div class="hero-img   mt-sm-5">
+
+              <figure class="">
+                <img alt="bike image" class="img-fluid d-none d-sm-block" src="{% static 'images/header_bike1.png'%}" />
+
+                <div class="vector">
+                  <span id="test" class="tooltip-toggle" data-tooltip="German Technology Bosch Motor"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></span>
+                  <span class="tooltip-toggle" data-tooltip="Next-Generation Lithium Battery"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></span>
+                  <span class="tooltip-toggle" data-tooltip=" Regenerative Braking System"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></span>
+                  <span class="tooltip-toggle" data-tooltip="Lithium Battery"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></span>
+                  <span class="tooltip-toggle" data-tooltip="Next-Generation"><i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i></span>
+                </div>
+
+              </figure>
+              <div class="social">
+                <ul>
+                  <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="battery-counter   mt-3 ">
+
+      <div class="container-fluid py-4  ">
+        <div class="row align-items-center">
+          <div class="col-lg-6   ">
+
+      
+            <div class="row justify-content-center  my-3  ">
+              <div class="col-sm-3 p-1">
+                <div class="card text-center h-100 counter-card reveal  fade-left ">
+                  <div class="card-block p-2   ">
+
+                    <div class="counter-inner ">
+                      <div class="counter-item mb-2 ">
+                        <i class="fa-solid fa-user  " style="color: #d9b15a;"></i>
+                        <span id="count1" class="count fw-bold fs-3">200</span>
+                      </div>
+                      <span class="card-text fw-normal fs-6">HAPPY CUSTOMERS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 p-1">
+                <div class="card text-center h-100 counter-card  reveal  fade-left ">
+                  <div class="card-block p-2   n">
+
+                    <div class="counter-inner ">
+                      <div class="counter-item mb-2 ">
+                        <i class="fa-solid fa-motorcycle" style="color: #d9b15a;"></i>
+                        <span id="count1" class="count fw-bold fs-3">15</span>
+
+                      </div>
+                      <span class="card-text fw-normal fs-6">BIKE MODELS
+
+
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 p-1">
+                <div class="card text-center h-100 counter-card reveal  fade-left ">
+                  <div class="card-block p-2    ">
+
+                    <div class="counter-inner ">
+                      <div class="counter-item mb-2 ">
+                        <i class="fa-brands fa-product-hunt" style="color: #d9b15a;"></i>
+                        <span id="count1" class="count fw-bold fs-3">100</span>
+                      </div>
+                      <span class="card-text fw-normal fs-6">PRODUCTS SOLD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 p-1">
+                <div class="card text-center h-100 counter-card reveal  fade-left ">
+                  <div class="card-block p-2     ">
+
+                    <div class="counter-inner ">
+                      <div class="counter-item mb-2 ">
+                        <i class="fa-solid fa-award" style="color: #d9b15a;"></i>
+                        <span id="count1" class="count fw-bold fs-3">10</span>
+                      </div>
+                      <span class="card-text fw-normal fs-6">BIKE AWARDS
+
+
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6  ">
+            <div class="battery">
+              <div class="card bg-transparent text-white battery-imgcard  reveal  fade-right ">
+                <img src="{% static 'images/battery (1).png'%}" class="" alt="...">
+                <div class="card-body">
+                  <div class="card-title  mt-4  d-flex justify-content-between">
+                    <p class="menu-name text-uppercase font-weight-bold">Never Run Out of Charge</p>
+
+                    <p class="video-icon"><a href="javascript:void(0)"><i class="fa-solid fa-circle-play fa-2xl" style="color: #d9b15a;"></i></a></p>
+                  </div>
+                  <p class="card-text ">Find a charging station in every 10 KM radius
+                    We have 140 charging stations across Kerala.
+                    .</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+    <section class="aboutme   mt-5 pb-0 pb-lg-3 " id="about">
+      <div class="container pt-3 reveal fade-bottom">
+        <div class="card">
+          <div class="details ">
+            <div class="content">
+              <h2 class="maintitle">ABOUT US <br>
+                <span class="subtag">We Are The Best electric two-wheelers
+                </span>
+              </h2>
+              <p class="subpara">
+                ARMZ SUPER ECO is a subsidiary of Aramam Associates. ARMZ SUPER ECO is a leading dealer of electric two-wheelers in the South India. The brand supplied by ARMZ SUPER ECO which is from GERMAN technology . ARMZ SUPER ECO has a very wide
+                range of vehicles suitable for various requirements.
+              </p>
+              <a href="{% url 'dealership' %}" class="btn btndealer d-md-block d-lg-none">
+                <span class="span">Get the Sub-Dealership</span>
+              </a>
+
+            </div>
+          </div>
+          <div class="imgBx">
+            <img src="{% static 'images/about-team.png'%}" alt="" class="img-fluid">
+            <a href="{% url 'dealership' %}" class="btn btndealer">
+              <span class="span">Get the Sub-Dealership</span>
+              <a href="javascript:void(0)" class="abtvideo"><i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i></a>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class=" brand mt-5">
+      <div class="container  py-5">
+        <h2 class="maintitle reveal  fade-left">BRAND AVAILABLE</h2>
+        <p class="main-subtitle reveal  fade-left">Check out the awesome collection from SUPER ECO SERIES</p>
+        <div class="row">
+          {% for bike in bike_info %}
+          <div class="col-md-6 col-lg-4">
+            <!-- <a href='#' class="url-box" > -->
+            <figure class='newsCard news-Slide-up reveal  fadeInUp'>
+              <img src="{{bike.model_image.url}}" />
+              <div class='newsCaption px-4'>
+                <div class="d-flex align-items-center justify-content-between cnt-title">
+                  <h5 class='newsCaption-title text-white m-0'>{{bike.model_name}}</h5>
+                  <a href="{% url 'ebikes' %}"><i class="fas fa-arrow-alt-circle-right " style="color: #ffffff;"></i></a>
+                </div>
+                <div class='newsCaption-content d-flex '>
+                  <ul class="col-10 py-4 py-md-2  px-0">
+                    <li><i class="fa-regular fa-circle-dot px-2" style="color: #ffffff; font-size: 15px;"></i>Range:{{bike.model_range}}</li>
+                    <li><i class="fa-regular fa-circle-dot px-2" style="color: #ffffff; font-size: 15px;"></i>Power:{{bike.model_power}}</li>
+                    <li><i class="fa-regular fa-circle-dot px-2" style="color: #ffffff; font-size: 15px;"></i>Weight:{{bike.model_weight}}</li>
+                  </ul>
+                </div>
+              </div>
+              <span class="overlay"></span>
+            </figure>
+            <!-- </a> -->
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section class=" services mt-5">
+      <div class="container  ">
+        <h2 class="maintitle reveal  fade-left">FEATURE </h2>
+        <p class="main-subtitle reveal  fade-left">We Created the most advanced E-Bike Technology</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex align-items-center service-card reveal   fade-in">
+              <div class="flex-shrink-0">
+                <img src="{% static 'images/feature1.png'%}" alt="...">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="services-title">GPS Tracking</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex align-items-center service-card reveal   fade-in">
+              <div class="flex-shrink-0">
+                <img src="{% static 'images/feature2.png'%}" alt="...">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="services-title">Power Your Ride</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex align-items-center service-card reveal   fade-in">
+              <div class="flex-shrink-0">
+                <img src="{% static 'images/feature3.png'%}" alt="...">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="services-title">High Power</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex align-items-center service-card reveal   fade-in">
+              <div class="flex-shrink-0">
+                <img src="{% static 'images/feature4.png'%}" alt="...">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="services-title">USB Charging</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex align-items-center service-card reveal   fade-in">
+              <div class="flex-shrink-0">
+                <img src="{% static 'images/feature5.png'%}" alt="...">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="services-title">High Safe Efficiency</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex align-items-center service-card reveal   fade-in">
+              <div class="flex-shrink-0">
+                <img src="{% static 'images/feature6.png'%}" alt="...">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h5 class="services-title">Anti locking System</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- battery type -->
+    <section class="battery-type mt-5">
+      <div class="container  pt-5">
+        <h2 class="maintitle reveal  fade-left">BATTERY LIFE</h2>
+        <p class="main-subtitle reveal  fade-left">The one electric scooter brand in India Having 8 year battery warranty with Five year assured replacement warranty</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <!-- <a href='#' class="url-box" > -->
+            <figure class='newsCard reveal  fade-right'>
+              <img src="{% static 'images/battery 3.png'%}" />
+              <!-- <div class='newsCaption px-4'>
+              <div class="d-flex align-items-center justify-content-center cnt-title">
+               <h5 class='newsCaption-title text-white   m-0'>12V Litinum Iron</h5>
+               </div>
+              </div> -->
+            </figure>
+            <div class="d-flex align-items-center justify-content-center cnt-title pb-5">
+              <h5 class='newsCaption-title text-white   m-0'>12V Litinum Iron</h5>
+            </div>
+            <!-- </a> -->
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <a href='#' class="url-box" > -->
+            <figure class='newsCard reveal  fade-right'>
+              <img src="{% static 'images/battery 3.png'%}" />
+            </figure>
+            <div class="d-flex align-items-center justify-content-center cnt-title pb-5">
+              <h5 class='newsCaption-title text-white   m-0'>12V Litinum Iron</h5>
+            </div>
+            <!-- </a> -->
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <a href='#' class="url-box" > -->
+            <figure class='newsCard reveal  fade-right'>
+              <img src="{% static 'images/battery 3.png'%}" />
+          
+            </figure>
+            <div class="d-flex align-items-center justify-content-center cnt-title pb-5">
+              <h5 class='newsCaption-title text-white   m-0'>12V Litinum Iron</h5>
+            </div>
+            <!-- </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="appoinment mt-5 ">
+      <div class="container-fluid">
+        <div class="card row flex-row-reverse">
+        
+          <img class="col-lg-4   card-img-end img-fluid p-0 d-none d-md-none d-lg-block reveal fade-right" src="{% static 'images/models-removebg-preview.png'%}" />
+
+          <div class="col-md-12 col-lg-8 card-body  ">
+            <div class="app-content">
+              <h1 class="card-title reveal  fade-left">BOOK YOUR APPOINTMENT TODAY </h1>
+              <div class="btn-content   ">
+                <span class="reveal fade-left"> ARE YOU LOOKING FOR AN E-Bike ?</span>
+                <a href="{% url 'contact' %}" class="btn btn-contact p-0 border-0 reveal fade-left">contact Us <i class="fa-solid fa-arrow-right pl-1" style="color: #000000;"></i></a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="news-article mt-5">
+      <div class="container py-5">
+        <h2 class="maintitle reveal fade-left">OUR NEWS</h2>
+        <!-- <p class="main-subtitle">News & Articles</p> -->
+        <div class="d-flex align-items-center justify-content-between pb-3">
+          <p class="main-subtitle  reveal fade-left">News & Articles</p>
+          <div class="reveal fade-right">
+            <a href="javascript:void(0)" class="btn btndealer  ">
+              <span class="span  ">ALL NEWS</span>
+            </a>
+          </div>
+
+        </div>
+   
+        <div class="row ">
+
+          {% for new in news %}
+          <div class="col-lg-6  ">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card h-100 reveal fade-right">
+                  <img src="{{new.photo.url}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">{{new.title}}</h2>
+                      <h5>{{new.created_date}}</h5>
+                      <p class="card-text">{{new.description}}</p>
+                  </div>
+                  <div class="card-footer  ">
+                    <a href="javascript:void(0)" class="btn btn-contact p-0 border-0 text-white">READ MORE <i class="fa-solid fa-arrow-right pl-2" style="color: #ffffff;"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <section class="awards mt-5">
+      <div class="container py-3">
+        <h2 class="maintitle reveal fade-left">OUR AWARDS</h2>
+        <p class="main-subtitle reveal fade-left">Awards & Certifications</p>
+        <div class="row">
+          {% for award in awards %}
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <figure class="newsCard news-Slide-up reveal fade-bottom">
+              <a href="#" class="url-box pop" data-bs-toggle="modal" data-bs-target="#imagemodal">
+                <img src="{{award.photo.url}}">
+              </a>
+            </figure>
+            <div class="modal fade  " id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <!-- <h5 class="modal-title text-black">Certificate Of Registeration</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="" class="imagepreview" style="width: 100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <section class=" showroom mt-5">
+      <div class="container py-5">
+        <h2 class="maintitle pb-4 reveal fade-left">SHOWROOMS VIDEO</h2>
+        <!-- <p class="main-subtitle">Awards & Certifications</p> -->
+
+        <div class="row justify-content-center">
+          {% for video in videos %}
+          <div class="col-md-6 col-lg-4">
+            <!-- <a href='#' class="url-box" > -->
+            
+
+            <figure class='newsCard   reveal fade-left'>
+              <!-- <img src="./images/pervidoe 1.png"/> -->
+              <div class=" " id="img_container">
+                <video width="320" height="240" controls>
+                  <source src="{{video.videofile.url}}" type="video/mp4">
+                  
+                Your browser does not support the video tag.
+                </video> 
+                <!-- <img src="{% static 'images/pervidoe 1.png'%}" /> -->
+                <!-- <a href="javascript:void(0)" class="button imgbutton"><i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i></a> --> 
+              </div>
+              <div class='newsCaption '>
+                <div class="d-flex align-items-center justify-content-between cnt-title">
+                  <h5 class='newsCaption-title text-white m-0'>
+                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Kochi, Ernakulam
+                  </h5>
+                  <a href="javascript:void(0)"><i class="fas fa-arrow-alt-circle-right " style="color: #ffffff;"></i></a>
+                </div>
+                <!-- <a href="" class="showroom-video"> <i class="fa-solid fa-circle-play fa-2xl" style="color: #FF5722;"></i>
+            -->
+              </div>
+            </figure>
+            
+            <!-- </a> -->
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <section class=" testimonial mt-5">
+      <div class="container  ">
+        <h2 class="maintitle pb-4 reveal fade-left">TESTIMONIAL</h2>
+  
+
+
+        <div id="carouselExampleIndicators" class="carousel slide  reveal fade-right" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active px-sm-3 " data-bs-interval="2000">
+              <div class="  quote">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                    pulvinar dapibus leo.
+                  </p>
+                  <cite>
+                    <span>- Kristi McSweeney</span>
+
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+            <div class="carousel-item px-sm-3" data-bs-interval="2000">
+              <div class="  quote">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                    pulvinar dapibus leo.
+                  </p>
+                  <cite>
+                    <span>- McSweeney fgff</span>
+
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+            <div class="carousel-item px-sm-3" data-bs-interval="2000">
+              <div class="  quote">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                    pulvinar dapibus leo.
+                  </p>
+                  <cite>
+                    <span>- Kristi ffgfg ggg</span>
+
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+    <section class=" team mt-5">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <h2 class="maintitle reveal fade-left">MEET TEAM</h2>
+            <p class="reveal fade-left">Awesome Team Behind Us.</p>
+            <p class="main-subtitle reveal fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <div class="button_wrap reveal fade-left">
+              <a href="javascript:void(0)" class="btn btndealer">
+                <span class="span">More Team</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row justify-content-center pt-4">
+
+              {% for team in teams %}
+              <div class="col-md-6 col-lg-4">
+                <a href='#' class="url-box">
+                  <figure class='newsCard news-Slide-up reveal fade-left '>
+                    <img src="{{team.photo.url}}" />
+                    <div class='newsCaption '>
+                      <div class="newsCaption-content  d-flex justify-content-center align-items-center py-2  fs-4   ">
+                        <a href="{{team.facebook_link}}" target="_blank" class="px-2  "> <i class="fa-brands fa-square-facebook" style="color: #ffffff; "></i>
+                        </a>
+                        <a href="{{team.twitter_link}}" target="_blank" class="px-2"> <i class="fa-brands fa-square-twitter" style="color: #ffffff; "></i>
+                        </a>
+                        <a href="{{team.instagram_link}}" target="_blank" class="px-2"> <i class="fa-brands fa-instagram" style="color: #ffffff; "></i>
+                        </a>
+                      </div>
+                    </div>
+                    <span class="overlay"></span>
+                  </figure>
+                  <span class='newsCaption-title text-white text-center px-2 py-3 m-0'>{{team.first_name}} {{team.first_name}}<br>
+                    {{team.designation}}</span>
+                </a>
+              </div>
+              {% endfor %}
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="maintitle reveal fade-left">LET’S CONNECT WITH US</h2>
+            <h5 class="maintitle-sub reveal fade-left">Get a Sub-Dealership of Armz Motors</h5>
+            <p class="main-subtitle reveal fade-left">Electric vehicles are hot demand in the market now due to increase in the fuel charges. This is the right time to start a business in the electric vehicle segment. Get the business proposal now to
+              take the sub-dealership of Armz motors.</p>
+            <div class="button_wrap reveal fade-left">
+              <a href="{% url 'dealership' %}" class="btn btndealer">
+                <span class="span">Apply Now</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-lg-6 text-center pt-sm-3 ">
+            <i class="fa-solid fa-envelope " style="color: #d9b154;     font-size: 4rem;
+        "></i>
+            <h2 class="maintitle reveal fade-right">NEWSLETTER</h2>
+            <p class="main-subtitle reveal fade-left">Subscribe our newsletter to receive the latest news and exclusive offers every week.</p>
+            <div class="mb-3 reveal fade-right ">
+              <div class="input-group mb-3 ">
+                
+                <input type="text" class="form-control" placeholder="TYPE YOUR EMAIL" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                <a href="#" class="btn btndealer  mt-0" id="button-addon2">
+                  <span class="span">Subscribe</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+  {% endblock %}

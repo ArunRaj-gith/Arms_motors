@@ -1,0 +1,148 @@
+{% extends "base.html"%}
+{% block content %}
+{% load static %}
+
+
+<main id="marginTop">
+
+    <section class="  my-5 ebikebook">
+      <div class="container">
+        <h2 class="maintitle  ">Book Now </h2>
+        <p class="main-subtitle  ">Fill the below form and we'll get in touch with you soon.</p>
+        {% include 'includes/messages.html' %}
+
+        <form action="{% url 'bookings' %}" class="mt-5 contactform " method="POST">
+          {% csrf_token %}
+          <h3 class="text-center">BOOKING APPLICATION FORM</h3>
+          <h6 class="text-center">Please fill in all the information and click ‘submit’.</h6>
+
+          <br />
+          <div class="geinstructions my-5   ">
+            <h4>Location</h4>
+            <div class="row ">
+
+              <div class="col-md-12 col-lg-4 mb-2 ">
+                <span class="input-group-text labeltxt col-3 w-100">Country</span>
+
+                <select id="QuestionOptions1" class="form-control informcntrl" name="country">
+                  <option class="default-label" value="" disabled selected>Select Country:</option>
+                  <option value="Country1">Country1</option>
+                  <option value="Country2">Country2</option>
+                  <option value="Country3">Country3</option>
+                </select>
+              </div>
+              <div class="col-md-12 col-lg-4 mb-2">
+                <span class="input-group-text labeltxt col-3 w-100">District</span>
+
+                <select id="QuestionOptions2" class="form-control informcntrl" name="district">
+                  <option class="default-label" value="" disabled selected>Select District:</option>
+                  <option value="District1">District1</option>
+                  <option value="District2">District2</option>
+                  <option value="District3">District3</option>
+                </select>
+              </div>
+              <div class="col-md-12 col-lg-4 mb-2">
+                <span class="input-group-text labeltxt col-3 w-100">State</span>
+
+                <select id="QuestionOptions3" class="form-control informcntrl" name="state">
+                  <option class="default-label" value="" disabled selected>Select State:</option>
+                  <option value="State1">State1</option>
+                  <option value="State2">State2</option>
+                  <option value="State3">State3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="geinstructions my-5   ">
+            <h4>E-bikes</h4>
+            <div class="row ">
+
+              <div class="col-md-12 col-lg-4 mb-2 ">
+                <span class="input-group-text labeltxt col-3 w-100">Select Model</span>
+
+                <select id="QuestionOptions1" class="form-control informcntrl" name="model_name">
+                  <option class="default-label" value="" disabled selected>Select Model:</option>
+                  {% for bike in bike_info %}
+
+                  <option value="{{ bike.model_name}}">{{ bike.model_name}}</option>
+                  
+                  {% endfor %}
+                </select>
+              </div>
+              
+             
+            </div>
+          </div>
+
+
+
+          <div class="geinstructions my-5   ">
+            <h4>Personal Information</h4>
+            <div class="row">
+
+              <div class="col-lg-6">
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text labeltxt col-3 w-100">First Name</span>
+                  <input type="text" name="first_name" class="form-control informcntrl w-100 ms-0" placeholder="Type Your First Name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text labeltxt col-3 w-100">Last Name</span>
+                  <input type="text" name="last_name" class="form-control informcntrl w-100 ms-0" placeholder="Type Your Last Name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text labeltxt col-3 w-100">Email @ </span>
+                  <input type="text" name="email" class="form-control informcntrl w-100 ms-0" placeholder="@example.com">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text labeltxt col-3 w-100">Phone No.</span>
+                  <input type="text" name="phone" class="form-control informcntrl w-100 ms-0" placeholder="Phone No." maxlength="11">
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text labeltxt col-3 w-100">Address</span>
+                  <textarea name="address" class="form-control informcntrl w-100 ms-0" cols="1" rows="3" maxlength="150"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text labeltxt col-3 w-100">Description</span>
+                  <textarea name="description" class="form-control informcntrl w-100 ms-0" cols="1" rows="3" maxlength="150"></textarea>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="choosesupport" class=" mt-5">
+            <div class="mt-3 button_wrap text-center ">
+              <!-- <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1" href="" class="btn btndealer  ">  -->
+              <!-- <a href="#" class="btn btndealer">
+                <span class="span">Submit</span>
+              </a> -->
+              <!-- <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1" href="" class="btn btndealer  ">
+                <span class="span">Confirm</span>
+              </a> -->
+              <input type="submit" value="Submit" class="btn btndealer">
+
+            </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+{% endblock %}
