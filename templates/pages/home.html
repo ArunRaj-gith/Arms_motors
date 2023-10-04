@@ -432,11 +432,11 @@
         <h2 class="maintitle reveal fade-left">OUR AWARDS</h2>
         <p class="main-subtitle reveal fade-left">Awards & Certifications</p>
         <div class="row">
-          {% for award in awards %}
+          {% for certificate in certificates %}
           <div class="col-sm-3 col-md-3 col-lg-3">
             <figure class="newsCard news-Slide-up reveal fade-bottom">
               <a href="#" class="url-box pop" data-bs-toggle="modal" data-bs-target="#imagemodal">
-                <img src="{{award.photo.url}}">
+                <img src="{{certificate.photo.url}}">
               </a>
             </figure>
             <div class="modal fade  " id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -600,7 +600,7 @@
         </div>
       </div>
     </section>
-    <section class="newsletter mt-5">
+    <!-- <section class="newsletter mt-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -634,7 +634,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     </main>
 

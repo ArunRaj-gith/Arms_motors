@@ -26,7 +26,7 @@ class New(models.Model):
         
         
 
-class Award(models.Model):
+class Certificate(models.Model):
     photo = models.ImageField(upload_to='photos')
     
     
@@ -45,3 +45,21 @@ class Bike_Model(models.Model):
     
     def __str__(self):
         return self.model_name
+    
+    
+class Showroom(models.Model):
+    photo = models.ImageField(upload_to='photos')
+    description = models.TextField(max_length=1000)
+    
+    
+class Award(models.Model):
+    photo = models.ImageField(upload_to='photos')
+    description = models.TextField(max_length=1000)
+    
+class Inauguration(models.Model):
+    photo = models.ImageField(upload_to='photos')
+    description = models.TextField(max_length=1000)
+    
+class Event(models.Model):
+    photo = models.ImageField(upload_to='photos')
+    description = models.TextField(max_length=1000)

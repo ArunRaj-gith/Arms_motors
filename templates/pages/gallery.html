@@ -19,290 +19,92 @@
         </div>
          <div class="box a"> 
           <div class="row">
+            {% for showroom in showrooms %}
             <div class="col-md-6 mt-3 col-lg-4">
               <figure class='newsCard   '>
                 <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
+                  <img src="{{showroom.photo.url}}" class="img-fluid" alt="image">
                   <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="0" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
               </div>
                <div class='newsCaption mb-3'>
                <div class="d-flex align-items-center justify-content-between cnt-title">
                 <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
+                {{showroom.description}} </h6> 
              
                 </div>
                </div>
               </figure>
-            </div>
-            <div class="col-md-6  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-6  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="2" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-6 mt-3 col-lg-6">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="3" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-6 mt-3 col-lg-6">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="4" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-6 mt-3 col-lg-3">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="5" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-6 mt-3 col-lg-3">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="6" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-6 mt-3 col-lg-3">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="7" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-12 mt-3 col-lg-3">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/about-team.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="8" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-      
+            </div> 
+            {% endfor %} 
         </div>
       </div>
+
+
         <div class="box b">
           <div class="row">
+            {% for award in awards %}
             <div class="col-md-6 mt-3 col-lg-4">
               <figure class='newsCard   '>
                 <div class=" " id="img_container">
-                  <img src="./images/news3.png" class="img-fluid" alt="image">
+                  <img src="{{ award.photo.url}}" class="img-fluid" alt="image">
                   <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="9" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
               </div>
                <div class='newsCaption mb-3'>
                <div class="d-flex align-items-center justify-content-between cnt-title">
                 <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
+                {{award.description}} </h6> 
              
                 </div>
                </div>
               </figure>
             </div>
-            <div class="col-md-6  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/news2.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="10" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-12  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/news3.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="11" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div >
+            {% endfor %}
           </div>
         </div>
+
+
         <div class="box c">
           <div class="row">
+            {% for inauguration in inaugurations %}
             <div class="col-md-6 mt-3 col-lg-4">
               <figure class='newsCard   '>
                 <div class=" " id="img_container">
-                  <img src="./images/aboutimg.png" class="img-fluid" alt="image">
+                  <img src="{{ inauguration.photo.url }}" class="img-fluid" alt="image">
                   <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="12" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
               </div>
                <div class='newsCaption mb-3'>
                <div class="d-flex align-items-center justify-content-between cnt-title">
                 <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
+                {{inauguration.description}} </h6> 
              
                 </div>
                </div>
               </figure>
             </div>
-            <div class="col-md-6  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/aboutimg.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="13" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-12  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/aboutimg.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="14" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-          </div>
-          
+            {% endfor %}
+          </div>  
         </div>
+
+
         <div class="box d">
           <div class="row">
+            {% for event in events %}
             <div class="col-md-6 mt-3 col-lg-4">
               <figure class='newsCard   '>
                 <div class=" " id="img_container">
-                  <img src="./images/videobanner.png" class="img-fluid" alt="image">
+                  <img src="{{event.photo.url}}" class="img-fluid" alt="image">
                   <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="15" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
               </div>
                <div class='newsCaption mb-3'>
                <div class="d-flex align-items-center justify-content-between cnt-title">
                 <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
+                  {{event.description}} </h6> 
              
                 </div>
                </div>
               </figure>
             </div>
-            <div class="col-md-6  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/videobanner.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="16" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
-            <div class="col-md-12  mt-3 col-lg-4">
-              <figure class='newsCard   '>
-                <div class=" " id="img_container">
-                  <img src="./images/videobanner.png" class="img-fluid" alt="image">
-                  <a data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="17" href="" class="button imgbutton"> <i class="fa-solid fa-magnifying-glass-plus fa-2xl" style="color: #ffffff;"></i></a>
-              </div>
-               <div class='newsCaption mb-3'>
-               <div class="d-flex align-items-center justify-content-between cnt-title">
-                <h6 class='newsCaption-title text-white m-0'>
-                Lorem ipsum dolor sit amet consectetur </h6> 
-             
-                </div>
-               </div>
-              </figure>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -316,6 +118,7 @@
                    </div> 
                      <div id="galleryControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                          <div class="carousel-inner ">
+
                              <div class="carousel-item active p-2 "  data-bs-interval="2000">
                                  <img src="./images/about-team.png" alt="0" class=" d-block w-100">
                              </div>
@@ -343,6 +146,7 @@
                              <div class="carousel-item p-2"  data-bs-interval="2000">
                                <img src="./images/about-team.png" class="d-block w-100" alt="8">
                            </div>
+                           
                            <div class="carousel-item p-2"  data-bs-interval="2000">
                             <img src="./images/news3.png" class="d-block w-100" alt="9">
                         </div>
